@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Classes Suite" parallel="classes" thread-count="2">
+
+<test name="Twitter API Tests">
+        <classes>
+            <class name="com.twitter.api.tests.GetUserTimelineTests"/>
+            <class name="com.twitter.api.tests.PostStatusesUpdateTests"/>
+        </classes>
+    </test>
+</suite>
